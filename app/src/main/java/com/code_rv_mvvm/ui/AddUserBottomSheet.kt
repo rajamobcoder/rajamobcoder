@@ -9,9 +9,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import com.code_rv_mvvm.R
 import com.code_rv_mvvm.databinding.AddUserBottomSheetBinding
-import com.code_rv_mvvm.viewmodel.SaveUserDataSource
 import com.code_rv_mvvm.viewmodel.HomeViewModel
-import com.code_rv_mvvm.viewmodel.UserAddViewModelFactory
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class AddUserBottomSheet : BottomSheetDialogFragment() {
@@ -25,9 +23,9 @@ class AddUserBottomSheet : BottomSheetDialogFragment() {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.add_user_bottom_sheet, container, false)
 
-//        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-        val dataSource = SaveUserDataSource(requireContext())
-        viewModel = ViewModelProvider(this, UserAddViewModelFactory(dataSource)).get(HomeViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+
+
         binding.homeViewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 

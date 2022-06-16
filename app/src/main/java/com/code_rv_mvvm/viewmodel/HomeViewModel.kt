@@ -5,20 +5,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.code_rv_mvvm.model.User
 
-class HomeViewModel(private val loginDataSource: SaveUserDataSource) : ViewModel() {
+class HomeViewModel : ViewModel() {
 
     //variable that will listen to user's input
-    private var _userNameInput = MutableLiveData<String>()
-    private var _userEmailInput = MutableLiveData<String>()
+     var _userNameInput = MutableLiveData<String>()
+     var _userEmailInput = MutableLiveData<String>()
 
-    val loginSuccess = MutableLiveData<Boolean>()
-    val loginFailedMessage = MutableLiveData<String?>()
-
-
-    val username: LiveData<String>
+    private val username: LiveData<String>
         get() = _userNameInput
 
-     val userEmail: LiveData<String>
+    private val userEmail: LiveData<String>
         get() = _userEmailInput
 
     fun addUser() {
@@ -37,19 +33,4 @@ class HomeViewModel(private val loginDataSource: SaveUserDataSource) : ViewModel
 
         }
     }
-
-
-    fun saveUserData(name: String, email: String) {
-        loginDataSource.save(name, email, object : SaveUserDataSource.SaveDataCallBack {
-            override fun onSuccess() {
-                loginSuccess.postValue(true)
-            }
-
-            override fun onError(message: String?) {
-
-                loginFailedMessage.postValue(message)
-            }
-        })
-    }
-
 }
