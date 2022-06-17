@@ -15,6 +15,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         android:padding="@dimen/_20sdp"
         tools:context=".ui.MainActivity">
 
@@ -49,6 +50,9 @@
                 android:id="@+id/cbUserShow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
+                android:buttonTint="@color/teal_200"
+                android:textColorHint="@color/teal_200"
                 android:checked="@={homeViewModel.isChecked}"
                 android:text="@string/do_you_want_to_show_password"
                 android:textColor="@color/text_primary"

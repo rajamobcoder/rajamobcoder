@@ -43,11 +43,8 @@ class AddUserBottomSheet : BottomSheetDialogFragment() {
     companion object {
         const val TAG = "ModalBottomSheet"
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setStyle(DialogFragment.STYLE_NORMAL, R.style.DialogStyle)
     }
-
-
 }
