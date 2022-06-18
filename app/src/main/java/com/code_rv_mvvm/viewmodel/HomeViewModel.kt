@@ -1,11 +1,8 @@
 package com.code_rv_mvvm.viewmodel
 
-import android.util.Log
-import android.widget.CompoundButton
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.code_rv_mvvm.model.User
 
 
 class HomeViewModel : ViewModel() {
@@ -35,8 +32,8 @@ class HomeViewModel : ViewModel() {
             println("Enter your email")
             return
         } else {
-            val users = User(userNames, userEmails)
-            println(users)
+
+            println(userEmails)
 
         }
     }

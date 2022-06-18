@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code_rv_mvvm.iml" filepath="$PROJECT_DIR$/.idea/modules/code_rv_mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/code_rv_mvvm.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
